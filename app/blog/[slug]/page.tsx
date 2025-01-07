@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
   try {
     const { frontmatter } = await getPost(params.slug)
     return frontmatter
-  } catch (e) {}
+  } catch () {}
 }
 
 export default async function BlogPage({ params }) {
@@ -27,7 +27,7 @@ export default async function BlogPage({ params }) {
 
   try {
     post = await getPost(params.slug)
-  } catch (e) {
+  } catch () {
     notFound() // Redirect to 404 page if the post is not found
     return null // Return null to satisfy JSX requirement
   }

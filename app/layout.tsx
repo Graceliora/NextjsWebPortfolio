@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Inter, Roboto } from 'next/font/google'
 import "./globals.css";
 import Header from '@/components/header'
 import Chatbot from '@/components/chatbot'
@@ -16,11 +15,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-const roboto = Roboto({
-  weight: ['400', '700'],
-  subsets: ['latin']
-})
 
 export const metadata: Metadata = {
   title: {

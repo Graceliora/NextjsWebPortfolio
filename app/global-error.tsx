@@ -1,6 +1,6 @@
 'use client'
 
-export default function GlobalError({ error }) {
+export default function GlobalError( }) {
   return (
     <html>
       <body>
